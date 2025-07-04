@@ -29,8 +29,6 @@ KLOTZ is a 34 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 
 ## KNOWN ISSUES
 
-- ̶T̶h̶e̶ ̶e̶n̶c̶o̶d̶e̶r̶ ̶o̶n̶ ̶t̶h̶e̶ ̶s̶e̶c̶o̶n̶d̶a̶r̶y̶ ̶s̶i̶d̶e̶ ̶d̶o̶e̶s̶n̶'̶t̶ ̶w̶o̶r̶k̶ ̶y̶e̶t̶.̶ ̶T̶h̶i̶s̶ ̶i̶s̶ ̶a̶ ̶l̶i̶m̶i̶t̶a̶t̶i̶o̶n̶ ̶o̶f̶ ̶Z̶M̶K̶ 
-  2023.6.18 페리퍼럴쪽 엔코더도 지원되게 바뀜
 - The code for the status LEDs needs to be added.
 
 
