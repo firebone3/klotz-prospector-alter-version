@@ -146,7 +146,7 @@ label= "BASE"                              ;
     &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U         &kp I       &kp O       &kp P
     &kp A       &hm LALT S  &hm LCTRL D &hm LSHFT F &kp G           &kp H       &hm LSHFT J   &hm LCTRL K &hm LALT L  &kp BSPC
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &td1
-                            &mt LSHFT TAB     &lt NAV SPACE         &lt SYM RET  &mt LSHFT RALT    
+                            &kp TAB     &lt NAV SPACE         &lt SYM RET  &mt LSHFT RALT    
                         >;
            	sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP &inc_dec_kp LC(RIGHT) LC(LEFT)>;
                 };
