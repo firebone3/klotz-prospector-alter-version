@@ -59,14 +59,14 @@
 	        COMBO(ctrl+c, &kp LC(C), 21 22)
                 COMBO(ctrl+v, &kp LC(V), 22 23)
                 COMBO(ctrl+x, &kp LC(X), 20 21)
-                COMBO(win, &kp LGUI, 20 34)
+                COMBO(win, &kp LGUI, 20 31)
                 COMBO(dcq, &kp LS(Q), 00 10)
                 COMBO(dcw, &kp LS(W), 01 11)
                 COMBO(dce, &kp LS(E), 02 12)
                 COMBO(dcr, &kp LS(R), 03 13)
                 COMBO(dct, &kp LS(T), 04 14)
 		COMBO(del, &kp DEL, 14 24)
-		COMBO(semi, &kp SEMI, 20 30)		
+		COMBO(semi, &kp SEMI, 19 29)		
     };
 
         behaviors {
