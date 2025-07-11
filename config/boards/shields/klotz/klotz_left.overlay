@@ -7,6 +7,7 @@
 #include "klotz.dtsi"
 #include <dt-bindings/zmk/pointing.h>
 
+/ {
 &kscan0 {
 	col-gpios
 		= <&pro_micro 18 GPIO_ACTIVE_HIGH>
@@ -16,7 +17,7 @@
 		, <&pro_micro 10 GPIO_ACTIVE_HIGH>
 		;
 };
-/ {
+
     sensors {
         compatible = "zmk,keymap-sensors";
 
