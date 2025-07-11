@@ -18,4 +18,5 @@
 
 &left_encoder {
 	status = "okay";
+	sensor-bindings = <&inc_dec_kp MRS_SCROLL_DOWN MRS_SCROLL_UP>;
 };
