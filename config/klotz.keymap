@@ -66,7 +66,8 @@
                 COMBO(dcr, &kp LS(R), 03 13)
                 COMBO(dct, &kp LS(T), 04 14)
 		COMBO(del, &kp DEL, 14 24)
-		COMBO(semi, &kp SEMI, 19 29)		
+		COMBO(semi, &kp SEMI, 19 29)
+		COMBO(esc, &kp ESC, 00 31)
     };
 
         behaviors {
