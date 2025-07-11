@@ -22,4 +22,5 @@
 
 &right_encoder {
 	status = "okay";
+	sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
 };
