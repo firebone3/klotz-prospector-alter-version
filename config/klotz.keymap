@@ -154,7 +154,7 @@ label= "BASE"                              ;
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &td1
                                         &kp TAB     &lt NAV SPACE   &lt SYM RET  &mt LSHFT RALT    
                         >;
-           	sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP &inc_dec_kp LC(RIGHT) LC(LEFT)>;
+           	sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP &inc_dec_kp RIGHT LEFT>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -181,7 +181,7 @@ label= "NAVI"                              ;
     &kp HOME    &kp END      &kp PG_UP   &kp PG_DN   &td1           &td2        &kp N1   &kp N2   &kp N3   &kp EQUAL 
                                          &trans      &trans         &mo ADJ     &kp N0  
                         >;
-		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(RIGHT) LC(LEFT)>;
+		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -208,7 +208,7 @@ label= "SYM"                               ;
     &none       &none       &none       &none       &none           &kp F1      &kp F2     &kp F3     &kp F4      &kp BSLH      
                                         &none       &mo ADJ         &none       &none
                         >;
-                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(RIGHT) LC(LEFT)>;
+                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -235,7 +235,7 @@ label= "ADJ"                               ;
     &none           &none       &none      &none        &bt BT_PRV      &none       &none       &none       &none       &none    
                                            &none        &none           &none       &none
                         >;
-          	sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(RIGHT) LC(LEFT)>;
+          	sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
         };
 };
