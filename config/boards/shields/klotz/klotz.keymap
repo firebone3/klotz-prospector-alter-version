@@ -62,7 +62,7 @@
                 COMBO(dce, &kp LS(E), 02 12)
                 COMBO(dcr, &kp LS(R), 03 13)
                 COMBO(dct, &kp LS(T), 04 14)
-		COMBO(del, &kp del, 14 24)
+		COMBO(del, &kp DEL, 14 24)
 		COMBO(semi, &kp SEMI, 20 30)		
     };
 
