@@ -5,12 +5,11 @@
  */
 
 #include "klotz.dtsi"
-#include <dt-bindings/zmk/pointing.h>
 
 &default_transform {
 	col-offset = <5>;
 };
-/ {
+
 &kscan0 {
 	col-gpios
 		= <&pro_micro 10 GPIO_ACTIVE_HIGH>
@@ -21,16 +20,6 @@
 		;
 };
 
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-
-        &right_encoder { // klotz.dtsi의 right_encoder를 참조
-            status = "okay"; // 오른쪽 절반에서 이 엔코더 활성화
-            sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>; // 오른쪽 엔코더 동작
-        };
-        // left_encoder는 이 오버레이에서 건드리지 않습니다.
-    };
-
-    // ... 다른 오른쪽 쉴드 특정 정의 ...
+&right_encoder {
+	status = "okay";
 };
