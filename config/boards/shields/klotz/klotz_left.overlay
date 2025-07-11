@@ -5,6 +5,7 @@
  */
 
 #include "klotz.dtsi"
+#include <dt-bindings/zmk/pointing.h>
 
 &kscan0 {
 	col-gpios
