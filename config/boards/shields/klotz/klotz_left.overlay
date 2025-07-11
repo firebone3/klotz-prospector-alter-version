@@ -15,8 +15,14 @@
 		, <&pro_micro 10 GPIO_ACTIVE_HIGH>
 		;
 };
+/ {
+    sensors {
+        compatible = "zmk,keymap-sensors";
 
-&left_encoder {
-	status = "okay";
-	sensor-bindings = <&inc_dec_kp MRS_SCROLL_DOWN MRS_SCROLL_UP>;
-};
+        &left_encoder { // klotz.dtsi의 left_encoder를 참조
+            status = "okay"; // 왼쪽 절반에서 이 엔코더 활성화
+            sensor-bindings = <&inc_dec_kp MRS_SCROLL_DOWN MRS_SCROLL_UP>; // 왼쪽 엔코더 동작
+        };
+        // right_encoder는 이 오버레이에서 건드리지 않습니다.
+    };
+
