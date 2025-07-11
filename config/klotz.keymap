@@ -139,7 +139,7 @@ label= "BASE"                              ;
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &td1
                             &mt LSHFT TAB     &lt NAV SPACE         &lt SYM RET  &mt LSHFT RALT    
                         >;
-           	sensor-bindings = <&msc SCRL_DOWN SCRL_UP &inc_dec_kp LC(RIGHT) LC(LEFT)>;
+           	sensor-bindings = <&inc_dec_kp MRS_SCROLL_DOWN MRS_SCROLL_UP &inc_dec_kp LC(RIGHT) LC(LEFT)>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
