@@ -108,6 +108,13 @@
         bindings = <&kp RPAR>, <&kp RBKT>, <&kp RBRC>;    
     }; 
 };
+        inc_dec_msc: sensor_rotation_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <200>;
+        };
+  
 
     macros {
        
