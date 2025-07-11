@@ -108,7 +108,13 @@
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp RPAR>, <&kp RBKT>, <&kp RBRC>;    
-    }; 
+        }; 
+	td4: tap_dance_4 {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <300>;
+        bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 3>, <&bt BT_SEL 4>;
+        };
 };
         inc_dec_msc: sensor_rotation_scroll {
             compatible = "zmk,behavior-sensor-rotate-var";
@@ -146,7 +152,7 @@ label= "BASE"                              ;
     &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U         &kp I       &kp O       &kp P
     &kp A       &hm LALT S  &hm LCTRL D &hm LSHFT F &kp G           &kp H       &hm LSHFT J   &hm LCTRL K &hm LALT L  &kp BSPC
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &td1
-                            &kp TAB     &lt NAV SPACE         &lt SYM RET  &mt LSHFT RALT    
+                                        &kp TAB     &lt NAV SPACE   &lt SYM RET  &mt LSHFT RALT    
                         >;
            	sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP &inc_dec_kp LC(RIGHT) LC(LEFT)>;
                 };
@@ -224,10 +230,10 @@ label= "ADJ"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &sys_reset      &bt BT_CLR  &out OUT_TOG    &none       &none           &none       &none       &none       &none       &none
-    &bootloader     &none       &bt BT_NXT      &none       &none           &none       &none       &none       &none       &none  
-    &msc SCRL_DOWN  &none       &bt BT_PRV      &none       &none           &none       &none       &none       &none       &none    
-                                                &none       &none           &none       &none
+    &sys_reset      &bt BT_CLR  &none      &none        &td4            &none       &none       &none       &none       &none
+    &bootloader     &none       &none      &none        &bt BT_NXT      &none       &none       &none       &none       &none  
+    &none           &none       &none      &none        &bt BT_PRV      &none       &none       &none       &none       &none    
+                                           &none        &none           &none       &none
                         >;
           	sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(RIGHT) LC(LEFT)>;
                 };
