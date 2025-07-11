@@ -45,8 +45,7 @@
 		a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		steps = <48>;
-		status = "okay";	
-		sensor-bindings = <&inc_dec_kp MRS_SCROLL_DOWN MRS_SCROLL_UP>;
+		status = "disabled";			
 	};
 
 	right_encoder: encoder_right {
@@ -55,8 +54,7 @@
 		a-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		steps = <48>;
-		status = "okay";		
-		sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
+		status = "disabled";				
 	};
 
 	sensors {
