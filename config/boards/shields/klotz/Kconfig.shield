@@ -4,3 +4,5 @@ config SHIELD_KLOTZ_LEFT
 config SHIELD_KLOTZ_RIGHT
     def_bool $(shields_list_contains,klotz_right)
 
+config SHIELD_KLOTZ_DONGLE
+    def_bool $(shields_list_contains,klotz_dongle)
