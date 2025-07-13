@@ -11,3 +11,4 @@ features:
 siblings:
   - klotz_left
   - klotz_right
+  - klotz_dongle
