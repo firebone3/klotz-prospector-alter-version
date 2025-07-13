@@ -20,6 +20,7 @@ include:
  
   - board: seeeduino_xiao_ble
     shield: klotz_dongle dongle_screen
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
 
   - board: nice_nano_v2
     shield: settings_reset
