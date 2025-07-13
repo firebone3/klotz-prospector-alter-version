@@ -17,5 +17,11 @@ include:
     shield: klotz_left
   - board: nice_nano_v2
     shield: klotz_right
+ 
+  - board: seeeduino_xiao_ble
+    shield: klotz_dongle prospector_adapter
+
   - board: nice_nano_v2
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
     shield: settings_reset
