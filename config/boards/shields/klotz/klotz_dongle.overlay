@@ -24,8 +24,7 @@
  		compatible = "zmk,keymap-sensors";
  		triggers-per-rotation = <24>;
  	};
-
- 	default_transform: keymap_transform {
+ 	
 	default_transform: keymap_transform {
 	compatible = "zmk,matrix-transform";
 	columns = <10>;
