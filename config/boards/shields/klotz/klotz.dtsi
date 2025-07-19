@@ -23,43 +23,4 @@
 		                        RC(3,3) RC(3,4)    RC(3,5) RC(3,6)
 		>;
 	};
-
-
-	kscan0: kscan {
-		compatible = "zmk,kscan-gpio-matrix";
-		label = "KSCAN";
-
-		diode-direction = "col2row";
-		wakeup-source;
-		row-gpios
-			= <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			;
-	};
-
-	left_encoder: encoder_left {
-		compatible = "alps,ec11";
-		label = "LEFT_ENCODER";
-		a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		steps = <96>;
-		status = "disabled";			
-	};
-
-	right_encoder: encoder_right {
-		compatible = "alps,ec11";
-		label = "RIGHT_ENCODER";
-		a-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		steps = <96>;
-		status = "disabled";				
-	};
-
-	sensors {
-		compatible = "zmk,keymap-sensors";
-		sensors = <&left_encoder &right_encoder>;
-		triggers-per-rotation = <24>;
-	};
 };
