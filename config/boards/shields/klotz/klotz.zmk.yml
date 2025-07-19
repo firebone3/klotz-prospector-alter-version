@@ -3,7 +3,9 @@ id: klotz
 name: Klotz
 type: shield
 url: 
-requires: [pro_micro]
+requires: 
+  - pro_micro
+  - seeeduino_xiao_ble
 exposes: 
 features:
   - keys
