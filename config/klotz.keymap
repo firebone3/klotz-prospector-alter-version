@@ -234,7 +234,7 @@ label= "ADJ"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
     &sys_reset    &none     &none        &out OUT_TOG &none           &none       &none       &none       &none       &none
-    &bootloader   &none     &bt BT_PRV   &td4         &bt BT_NXT      &none       &none       &none       &none       &none  
+    &bootloader   &none     &bt BT_PRV   &td4         &bt BT_NXT      &tog GAME   &none       &none       &none       &none  
     &bt BT_CLR    &none     &none        &none        &none           &none       &none       &none       &none       &none    
                                          &none        &none           &none       &none
                         >;
@@ -260,10 +260,10 @@ label= "GAME"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U         &kp I       &kp O       &kp P
-    &kp A       &kp S  		&kp D 		&kp F 		&kp G           &kp H       &kp J		  &kp K 	  &kp L 	  &kp BSPC
-    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &kp SLASH
-                                        &kp TAB     &kp SPACE   	&kp RET 	&kp RALT    
+    &kp Q       &kp W       &kp E       &kp R       &kp T           &kp LEFT       &kp M         &kp J       &kp I      &kp LALT
+    &kp A       &kp S  		&kp D 		&kp F 		&kp G           &kp DOWN       &kp N		 &kp K 	     &kp O 	 	&kp LCTRL
+    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp RIGHT      &kp COMMA     &kp L 		 &kp P      &kp LSHFT
+                                        &kp TAB     &kp SPACE   	&tog GAME 	   &kp DEL    
                         >;
           	sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
